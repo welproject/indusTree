@@ -1,25 +1,22 @@
 /* CSS Document */
-
-
 .navbar-nav {
-	margin-bottom: 0;
-	margin-left: auto;	
-	align-items: center;
+  margin-bottom: 0;
+  margin-left: auto;
+  align-items: center;
 }
-
-
-
-
-
-
+.logo {
+  width: 150px;
+  height: 80px;
+}
 
 .slider {
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 1240px;
 }
 
 .slide_viewer {
-  height: 340px;
+	margin-top: 80px;
+  height: 500px;
   overflow: hidden;
   position: relative;
 }
@@ -42,22 +39,27 @@
 }
 
 .slide:nth-of-type(1) {
-  background: #D7A151;
+ background-image: url("images/image1.jpeg");
+background-size: cover;
 }
 
 .slide:nth-of-type(2) {
-  background: #F4E4CD;
+   background-image: url("images/image2.jpg");
+	background-size: cover;
 }
 
 .slide:nth-of-type(3) {
-  background: #C75534;
+   background-image: url("images/image4.jpg");
+	background-size: cover;
 }
 
 .slide:nth-of-type(4) {
-  background: #D1D1D4;
+   background-image: url("images/image5.jpg");
+	background-size: cover;
 }
 
 .slide_buttons {
+	margin-bottom: 80px;
   left: 0;
   position: absolute;
   right: 0;
@@ -81,11 +83,11 @@ a.slide_btn {
 }
 
 .directional_nav {
-  height: 340px;
+  height: 200px;
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 1400px;
   position: relative;
-  top: -340px;
+  top: -350px;
 }
 
 .previous_btn {
@@ -128,4 +130,3 @@ a.slide_btn {
     right: 50px;
   }
 }
-
