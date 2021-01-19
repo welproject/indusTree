@@ -4,9 +4,11 @@
 .navbar-nav {
 	margin-bottom: 0;
 	margin-left: auto;	
+	align-items: center;
 }
 
-.navbar-nav ul{align-items: center}
+
+
 
 
 
@@ -126,6 +128,4 @@ a.slide_btn {
     right: 50px;
   }
 }
-.nav-item {
-	align-content: flex-end;
-}
+
