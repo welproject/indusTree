@@ -8,8 +8,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <!--<link href="file:///C|/Users/ANIRUDDH/AppData/Roaming/Adobe/Dreamweaver 2021/en_US/Configuration/Temp/Assets/eamDC37.tmp/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">-->
 <link rel="stylesheet" href="stylesheet.css"	>
-	<script src="myscripts.js"></script>
-
+<script src="myscripts.js"></script>
 </head>
 <body>
 <!-- Navigation -->
@@ -26,48 +25,217 @@
     </div>
   </div>
 </nav>
-<div class="clearfix"></div>
-<div class="slideshowContainer">
+<div class="slideshowContainer"> 
   
-<!-- Replace the image 'src' with the images in your project.
-Javascript is set up so that you can add as many images as you like, but make sure that you match the number of 'circle' span elements (below) to the number of images -->
-  <img class="imageSlides" src="images/image1.jpeg">
-  <img class="imageSlides" src="images/image2.jpg">
-  <img class="imageSlides" src="images/image4.jpg">
+  <!-- Replace the image 'src' with the images in your project.
+Javascript is set up so that you can add as many images as you like, but make sure that you match the number of 'circle' span elements (below) to the number of images --> 
+  <img class="imageSlides" src="images/image1.jpeg"> <img class="imageSlides" src="images/image2.jpg"> <img class="imageSlides" src="images/image4.jpg"> 
   
-<!-- I would recommend to replace these 'span' elements with 'img' files
+  <!-- I would recommend to replace these 'span' elements with 'img' files
 for each the left and right arrow that fits your project, and size accordingly.
-I've shown 'span' elements because I didn't want to upload files. -->
-  <span id ="leftArrow" class="slideshowArrow">&#8249;</span>
-  <span id ="rightArrow" class="slideshowArrow">&#8250;</span>
-  
-  <div class="slideshowCircles">
-<!-- Filled 'dot' class is set to first image in slideshow, and then via Javascript the filled 'dot' class follows the current image.
-Make sure you match the number of these 'circle' span elements to the number of images in your slideshow. -->
-    <span class="circle dot"></span>
-    <span class="circle"></span>
-    <span class="circle"></span>
-  </div>
-  
+I've shown 'span' elements because I didn't want to upload files. --> 
+  <span id ="leftArrow" class="slideshowArrow">&#8249;</span> <span id ="rightArrow" class="slideshowArrow">&#8250;</span>
+  <div class="slideshowCircles"> 
+    <!-- Filled 'dot' class is set to first image in slideshow, and then via Javascript the filled 'dot' class follows the current image.
+Make sure you match the number of these 'circle' span elements to the number of images in your slideshow. --> 
+    <span class="circle dot"></span> <span class="circle"></span> <span class="circle"></span> </div>
 </div>
-
-
-<div class="clearfix"></div>
-
-<!-- Banner -->
-
-<section class="home-banner">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6 col-md-6">
-        <div class="home-banner-content">
-          <h1> Here is info about INDUSTREE </h1>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nulla libero doloremque cum beatae quo? Neque tempore, reprehenderit quaerat repudiandae deserunt explicabo autem, voluptate possimus aliquam nam minus perferendis asperiores. </p>
+	
+	
+<div class="main-container"> 
+  <!-- Banner -->
+  
+  <section class="home-banner">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="home-banner-content">
+            <h1> Here is info about INDUSTREE </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nulla libero doloremque cum beatae quo? Neque tempore, reprehenderit quaerat repudiandae deserunt explicabo autem, voluptate possimus aliquam nam minus perferendis asperiores. </p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+ 
+  <!-- Cards -->
+  
+  <section id="team" class="pb-5">
+    <div class="container">
+      <div class="row"> 
+        <!-- Team member -->
+        
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid"          src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center ">
+                    <h4 class="card-title mt-4">Sunlimetech</h4>
+                    <p class="card-text">This is basic card with image on top,n and button.This is basic card with image on top, title, description and button.</p>
+                    <ul class="list-unstyled">
+                      <li > <a class="social-icon text-xs-center" target="_blank" href="#"> <i class="fa fa-facebook"></i> </a> </li>
+                      <li > <a class="social-icon text-xs-center" target="_blank" href="#"> <i class="fa fa-twitter"></i> </a> </li>
+                      <li> <a class="social-icon text-xs-center" target="_blank" href="#"> <i class="fa fa-skype"></i> </a> </li>
+                      <li> <a class="social-icon text-xs-center" target="_blank" href="#"> <i class="fa fa-google"></i> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member --> 
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card ">
+                  <div class="card-body text-center">
+                    <h4 class="card-title mt-5" > Sunlimetech</h4>
+                    <a href="#" class="btn btn-primary btn-lg mt-5"><i class="fa fa-plus"></i></a> </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                    <ul class="list-unstyled">
+                      <li> <a  target="_blank" href="#">
+                        <h4>ball</h4>
+                        </a> </li>
+                      <li> <a   target="_blank" href="#">
+                        <h6>ball</h6>
+                        </a> </li>
+                      <li> <a  target="_blank" href="#">
+                        <h5>ball</h5>
+                        </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member --> 
+        
+      </div>
+		
+		<div class="row"> 
+        <!-- Team member -->
+        
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid"          src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center ">
+                    <h4 class="card-title mt-4">Sunlimetech</h4>
+                    <p class="card-text">This is basic card with image on top,n and button.This is basic card with image on top, title, description and button.</p>
+                    <ul class="list-unstyled">
+                      <li > <a class="social-icon text-xs-center" target="_blank" href="#"> <i class="fa fa-facebook"></i> </a> </li>
+                      <li > <a class="social-icon text-xs-center" target="_blank" href="#"> <i class="fa fa-twitter"></i> </a> </li>
+                      <li> <a class="social-icon text-xs-center" target="_blank" href="#"> <i class="fa fa-skype"></i> </a> </li>
+                      <li> <a class="social-icon text-xs-center" target="_blank" href="#"> <i class="fa fa-google"></i> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member --> 
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card ">
+                  <div class="card-body text-center">
+                    <h4 class="card-title mt-5" > Sunlimetech</h4>
+                    <a href="#" class="btn btn-primary btn-lg mt-5"><i class="fa fa-plus"></i></a> </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                    <ul class="list-unstyled">
+                      <li> <a  target="_blank" href="#">
+                        <h4>ball</h4>
+                        </a> </li>
+                      <li> <a   target="_blank" href="#">
+                        <h6>ball</h6>
+                        </a> </li>
+                      <li> <a  target="_blank" href="#">
+                        <h5>ball</h5>
+                        </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member --> 
+        
+      </div>
+    </div>
+  </section>
+	<section class="home-banner">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="home-banner-content">
+            <h1> Here is info about INDUSTREE </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nulla libero doloremque cum beatae quo? Neque tempore, reprehenderit quaerat repudiandae deserunt explicabo autem, voluptate possimus aliquam nam minus perferendis asperiores. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	
+	<!--image demo -->
+<div class="row">
+  <div class="col-lg-4 col-md-4 ">
+    <div class="effect3 "> <img src="https://res.cloudinary.com/dtvy1jqj0/image/upload/v1550950411/Hover%20Images/c2.jpg" alt="">
+      <div class="caption">Ciao</div>
+    </div>
   </div>
-</section>
+	<div class="col-lg-4 col-md-4 ">
+    <div class="effect3 "> <img src="https://res.cloudinary.com/dtvy1jqj0/image/upload/v1550950411/Hover%20Images/c2.jpg" alt="">
+      <div class="caption">Ciao</div>
+    </div>
+  </div>
+	<div class="col-lg-4 col-md-4 ">
+    <div class="effect3 "> <img src="https://res.cloudinary.com/dtvy1jqj0/image/upload/v1550950411/Hover%20Images/c2.jpg" alt="">
+      <div class="caption">Ciao</div>
+    </div>
+  </div>
+</div>
+<!--img end--> 
+</div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
