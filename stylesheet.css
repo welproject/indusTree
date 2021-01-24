@@ -1,6 +1,6 @@
 /* CSS Document */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-<<<<<<< HEAD
+
 
 .hdear{
 	width: 100%;
@@ -8,10 +8,10 @@
     top:0;
 	 overflow:hidden;
 	z-index: 10;
-}/**/
+}
+/**/
 
-=======
->>>>>>> origin/main
+
 .navbar-nav {
   margin-bottom: 0;
   margin-left: auto;
