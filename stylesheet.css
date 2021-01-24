@@ -1,6 +1,13 @@
 /* CSS Document */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+.hdear{
+	width: 100%;
+	position:fixed;
+    top:0;
+	 overflow:hidden;
+	z-index: 10;
+}/**/
 
 .navbar-nav {
   margin-bottom: 0;
@@ -299,6 +306,23 @@ section {
 
 
 /* end of img demo*/
+
+/*footer*/
+
+/*footer {
+    width:100%;
+    z-index:-1;
+    position:fixed;
+    left:0;
+    bottom:0;
+    display:block;
+    padding:20px;
+    color:#eee;
+    text-align: center;
+    background: linear-gradient(#000, #333);
+    font-family:arial, helvetica, sans-serif;
+}*/
+/*end footer*/
 
 
 
