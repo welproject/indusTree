@@ -21,6 +21,11 @@
   width: 150px;
   height: 80px;
 }
+
+.main-container{
+	background-color: darkgray;
+}
+/*
 .slider {
   margin: 0 auto;
   max-width: 1240px;
@@ -123,6 +128,7 @@ a.slide_btn {
 .previous_btn:hover, .next_btn:hover {
   opacity: 1;
 }
+*/
 /* card */
 /* FontAwesome for working BootSnippet :> */
 #team {
@@ -236,13 +242,13 @@ section {
   }
 }
 
-
+/*Slider*/
 
 .slideshowContainer {
   position: relative;
   overflow: hidden;
-  margin: 50px 0 75px;
-  width: 1200px;
+  margin: 75px 150px;
+  max-width:  1240px;
   height: 500px;
 }
 
@@ -305,6 +311,11 @@ section {
   border-radius: 25px;
   border: solid 2px rgba(255, 255, 255, 0.5);
   transition: 1s ease-in-out;
+}
+
+.dot {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 2px rgba(255, 255, 255, 0.5);
 }
 
 <<<<<<< HEAD
