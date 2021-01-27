@@ -86,7 +86,8 @@ section {
 }
 #team .card {
   border: none;
-  background-image: url("images/demo-card.png");
+  background-image: url("images/card-design-2.png");
+	
 }
 .image-flip:hover .backside, .image-flip.hover .backside {
   -webkit-transform: rotateY(0deg);
@@ -156,7 +157,7 @@ section {
 	
 }
 .backside .card-body {
-  background: #005b8e;
+  background-image: url("images/card-back.png")
 	
 	
 }
