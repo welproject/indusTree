@@ -1,6 +1,6 @@
 /* CSS Document */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap');
 body {
 	background: #f7f7e8;
 	font-family: 'Poppins', sans-serif;
@@ -15,6 +15,7 @@ body {
 	z-index: 10;
 	background-color: #c7cfb7;
 }
+
 /**/
 
 
@@ -68,7 +69,7 @@ background-color: #e40046;
 /* card */
 /* FontAwesome for working BootSnippet :> */
 #team {
-  background: #f7f7e8; !important
+  background: #f7f7e8; 
 }
 .btn-primary:hover, .btn-primary:focus {
   background-color: #108d6f;
@@ -87,6 +88,9 @@ section {
 #team .card {
   border: none;
   background-image: url("images/card-design-2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	
 	
 }
 .image-flip:hover .backside, .image-flip.hover .backside {
@@ -165,8 +169,10 @@ section {
   font-size: 18px;
   color: white !important;
 }
-.frontside .card .card-title, .backside .card .card-title {
-  color: whitesmoke !important;
+.frontside .card .card-title /*.backside .card .card-title*/ {
+	font-family:'Sacramento';
+	color: whitesmoke !important;
+	
 }
 
 /*.frontside .card .card-body img {
@@ -415,7 +421,7 @@ footer {
 }
 
 footer p {
-    padding: 40px 0;
+    padding: 20px 0 0 0;
     text-align: center;
 }
 
