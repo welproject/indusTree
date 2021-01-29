@@ -32,30 +32,24 @@ body {
 
 .nav-link:hover{
 	color: black;
-	
 }
 
 .menu-item-link {
--webkit-font-smoothing: antialiased;
-font-weight: 400;
-line-height: 1.45em;
-margin: 10px;
-padding: 0;
-border: 0;
-vertical-align: baseline;
-	height: 20px;
-	box-sizing: border-box;
-font-size: 16px;
-color: white;
-outline: 0 none;
-text-decoration: none;
-background-color: #e40046;
+    background-color: rgb(234, 172, 127);
+    color: white;
+    text-transform: uppercase;
+    height: 20px;
+	margin: 15px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 1em 1.5em;
+    text-decoration: none;
 }
-.menu-item-link:hover{
-	font-size: 20px;
-	text-decoration: none;
-	
-	color: aliceblue;
+.menu-item-link:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+	border: 2px solid #140E0E;
 }
 .logo {
   width: 150px;
@@ -71,6 +65,7 @@ background-color: #e40046;
 #team {
   background: #f7f7e8; 
 }
+
 .btn-primary:hover, .btn-primary:focus {
   background-color: #108d6f;
   border-color: #108d6f;
@@ -125,6 +120,7 @@ section {
   -ms-transform: rotateY(0deg);
   z-index: 2;
   margin-bottom: 30px;
+	overflow: auto;
 }
 .backside {
   position: absolute;
@@ -139,6 +135,7 @@ section {
   -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
   -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
   box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	overflow: auto;
 }
 .frontside, .backside {
   -webkit-backface-visibility: hidden;
@@ -157,16 +154,35 @@ section {
   transform-style: preserve-3d;
 }
 .frontside .card, .backside .card {
+	
   min-height: 312px;
 	
 }
+@media only screen and (max-width: 767px) {
+/*  .backside .card, .frontside .card {
+    min-height: 430px;
+  }*/
+	.right-list,.left-list{
+		align-content: center;
+		float: none;
+	}
+	.backside .card li{
+		font-size: 1em;
+		text-decoration: none;
+		line-height: 1.2;
+	}
+	.backside .card p{
+		font-size: 13px;
+	}
+}
+
 .backside .card-body {
   background-image: url("images/card-back.png")
 	
 	
 }
 .backside .card a {
-  font-size: 18px;
+  font-size: 16px;
   color: white !important;
 }
 .frontside .card .card-title /*.backside .card .card-title*/ {
@@ -180,15 +196,15 @@ section {
   height: 120px;
   border-radius: 50%;
 }*/
-.list-unstyled{
-	display: inline-block;
+.left-list{
+	display: block;
 	float: left;
-	margin: 15px;
+	margin: 10px;
 
 }
 .right-list{
 	float: right;
-	margin: 15px;
+	margin: 10px;
 }
 .list-center{
 	float: center;
@@ -335,7 +351,7 @@ section {
 
 
         section {
-            padding: 60px 0;
+            padding: 40px 0;
            /* min-height: 100vh;*/
         }
  ul {
@@ -347,12 +363,11 @@ section {
     border-bottom: 1px solid #353C46;
     background: #1A1E25;
     color: #868c96;
-
 }
 
 .contact-content p {
     font-size: 15px;
-    margin: 30px 0 60px;
+    margin: 30px 0;
     position: relative;
 }
 
@@ -380,9 +395,9 @@ section {
 }
 
 .contact-social {
+	float: left;
     margin-top: 30px;
 }
-
 .contact-social > ul {
     display: inline-flex;
 }
@@ -399,38 +414,32 @@ section {
 }
 
 .contact-social ul li a:hover {
-    border: 1px solid #FAB702;
-    color: #FAB702;
+    border: 1.5px solid #f7f7e8;
+    color: #f7f7e8;
 }
-
+.contact-social h5{
+	margin-bottom: 20px;
+}
 .contact-content img {
     max-width: 210px;
 }
-.facebook-bg{
-  background: #3B5998;
+.contact-review {
+	float: right;
+    margin-top: 30px;
 }
-.twitter-bg{
-  background: #55ACEE;
-}
-.google-bg{
-  background: #DD4B39;
-}
+
 footer {
     background: #1A1E25;
     color: #868c96;
 }
-
 footer p {
     padding: 20px 0 0 0;
     text-align: center;
 }
-
 footer img {
     width: 44px;
 }
 /*end footer*/
-
-
 
 
 /*Contact */
@@ -476,6 +485,35 @@ footer img {
        letter-spacing:3px;
     }
 
+.contact-banner p{
+	margin-left: 25px;
+	font-size:22px;
+}
+.contact-banner{
+	width: 99%;
+	height: auto;
+	color:blacks;
+	box-sizing: border-box;
+	background-color: #EBFFE5;
+
+}
+.contact-item-link {
+    background-color: rgb(234, 172, 127);
+    color: white;
+    text-transform: uppercase;
+    height: 25px;
+	margin-right: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 15px;;
+    text-decoration: none;
+}
+.contact-item-link:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+	border: 2px solid #140E0E;
+}
     .contact-form i.fa{
       font-size: 14px; 
       padding: 3%;
@@ -574,13 +612,88 @@ footer img {
       }
 
 }
-
-.contact-banner{
-	color:blacks;
-	box-sizing: border-box;
-	background-color: #EBFFE5;
-
+.map{
+	margin: 20px;
 }
+
 .nav-icon-color {
 	color: #557174;
 }
+
+
+/*Products */
+
+.image{
+	margin: 180px 40px 40px;
+	height: 50%;
+	width: auto;
+}
+
+.description{
+	margin: 180px 150px 30px;
+	
+}
+
+.table-resp {
+  border-collapse: collapse;
+	margin-left: 1em;}
+
+  caption {
+    text-align: left;
+    width: 95vw; /* Screws up table width until positioning below*/
+  }
+
+
+@media (min-width: 768px) {  
+  .table-resp {
+    margin-top: 3em;
+	  position: relative; }/* Used below to give position: absolute context*/
+    caption {
+      position: absolute; /* Fixes table width broken by width: 95vw above*/
+      top: -2em;
+      margin-bottom: 20px;
+		font-size: 25px;
+    }
+    thead {
+      text-align: left;
+      background-color: #333;
+      color: white;
+    }
+    tbody tr:nth-child(odd) {
+           background-color: hsl(0, 0%, 94%);
+        }
+        tr:nth-child(even) {
+           background-color: hsl(0, 0%, 88%);
+			}
+	
+		td, th {
+			padding: 10px;
+	}
+    td, th  :nth-child(2) {
+        border-left: 3px solid #fff;
+      }
+    }
+  
+
+
+@media (max-width: 767px) /* xs */ {
+  thead {
+    display: none;
+  }
+  .table-resp {
+    display: block;
+    margin-top: 1em;
+  }
+  td {
+    display: block;
+  }
+  td:first-child {
+    font-weight: 700;
+    margin-top: .75em;
+    margin-bottom: 0;
+  }
+  td:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
