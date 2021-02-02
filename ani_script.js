@@ -2,7 +2,7 @@
 
 
 
-$('.slider').each(function() {
+$('.sli class="list-items"der').each(function() {
   var $this = $(this);
   var $group = $this.find('.slide_group');
   var $slides = $this.find('.slide');
