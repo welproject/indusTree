@@ -619,6 +619,57 @@ footer img {
 .nav-icon-color {
 	color: #557174;
 }
+/* table anni*/
+
+table {
+	width: 100%;
+	border-collapse:collapse;
+	position: relative;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 5px;
+	background-color: rgba(81,50,36,0.72);
+	color: #fff;
+	text-align: center
+}
+
+th {
+	text-align: center;
+	background-color: rgba(55,35,11,0.87);
+}
+
+thead th {
+	 
+		background-color: rgba(40,23,2,0.80);
+
+}
+
+
+tbody tr:hover {
+			background-color: rgba(24,39,17,0.82);
+	 		
+
+		}
+	
+	
+	td:hover {
+		background-color:rgba(24,39,17,0.82);
+}
+
+		/*td:hover:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				
+				background-color: rgba(52,86,35,0.82);
+				z-index: -1;
+			}*/
+		
+	
 
 
 /*Products */
