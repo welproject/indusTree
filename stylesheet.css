@@ -1,6 +1,7 @@
 /* CSS Document */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap');
+
 body {
 	background: #f7f7e8;
 	font-family: 'Poppins', sans-serif;
@@ -503,11 +504,20 @@ section {
 .slideshowContainer {
   position: relative;
   overflow: hidden;
-  margin: 50px 0 75px;
-  max-width: 1240px;
+ /* margin: 200px 150px 100px;*/
+  max-width:  1240px;
   height: 500px;
 }
-
+@media only screen and (min-width: 992px) {
+	.slideshowContainer{
+  margin: 200px 150px 100px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.slideshowContainer{
+		margin:80px 50px 50px;
+	}
+}
 .imageSlides {
   position: absolute;
   left: 50%;
@@ -519,37 +529,31 @@ section {
   transition: opacity 1s ease-in-out;
   z-index: -1;
 }
-
 /* add 'visible' class via Javascript */
 .visible {
   opacity: 1;
 }
-
 .slideshowArrow {
   font-size: 7em;
   color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
 }
-
 .slideshowArrow:hover {
   opacity: 0.75;
 }
-
 #leftArrow {
   position: absolute;
   left: 4%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 #rightArrow {
   position: absolute;
   right: 4%;
   top: 50%;
   transform: translate(50%, -50%);
 }
-
 .slideshowCircles {
   position: absolute;
   bottom: 2%;
@@ -557,7 +561,6 @@ section {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .circle {
   display: inline-block;
   margin-left: 3px;
@@ -568,20 +571,10 @@ section {
   border: solid 2px rgba(255, 255, 255, 0.5);
   transition: 1s ease-in-out;
 }
-
 .dot {
   background-color: rgba(255, 255, 255, 0.7);
   border: solid 2px rgba(255, 255, 255, 0.5);
 }
-
-@media only screen and (min-width: 992px) {
-	.slideshowContainer{
-  margin: 200px 150px 100px;
-	}
-}
-
-
-
 
 @media only screen and (max-width: 767px) {
   .previous_btn {
@@ -593,7 +586,8 @@ section {
 	.image-block img{
 		margin-left: 0px;
 	}
-}
+
+
 /*image gallery*/
 
 .image-block{transition:all .3s linear;-webkit-transition:all .3s linear;-moz-transition:all .3s linear}
