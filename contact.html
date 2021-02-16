@@ -10,12 +10,12 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-sm navbar-light bg-light hdear">
+<nav class="navbar navbar-expand-sm navbar-light hdear">
   <div class="container"> <a class="navbar-brand" "pull-left" href="#"> <img class="logo" src="images/leaves-tree-logo.jpg" alt="IndusTree"/> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ">
-        <li class="nav-item"> <a class="nav-link"  href="home_demo.html">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link"  href="index.html">Home</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#">Products</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#">About Us</a> </li>
         <li class="nav-item"> <a class="nav-link active" href="#" saria-current="page">Contact</a> </li>
@@ -24,7 +24,7 @@
             <path d="M352 320c-32 32-32 64-64 64s-64-32-96-64-64-64-64-96l64-64s-64-128-96-128l-96 96c0 64 65.75 193.75 128 256s192 128 256 128c0 0 96-64 96-96s-96-128-128-96z"></path>
           </svg>
           99788-32261</a> </li>
-        <li class="nav-item"> <a class="menu-item-link" href="#">Get a Quote</a></li>
+        <li class="nav-item"> <a class="menu-item-link" href="contact.html">Get a Quote</a></li>
       </ul>
     </div>
   </div>
@@ -39,12 +39,21 @@
       
       <!-- First grid -->
       <div class="contact-details">
-		   <i class="fa fa-phone" > </i><span class="form-info"> +91 93762 32261,+91 99788 32261</span><br>
-        <i class="fa fa-envelope"></i><span class="form-info"> industree@gmail.com</span> <br>
-		  <i class="fa fa-map-marker"></i><span class="form-info"> Master Niwas Compound,
-        Besides Shiv Shankar hotel, <br>
-        Pratap Nagar Road,
-        Vadodara, Gujarat 390004 </span><br>
+		  <div class="row">
+		  <div class="col-lg-2 col-md-3"><i class="fa fa-phone" > </i></div>
+		  <div class="col-lg-9 col-md-9"><span class="form-info"> <a href="tel:9376-232-261">+91 93762 32261</a><br><a href="tel:9978-832-261"/>+91 99788 32261</a></span><br></div>
+		  </div>
+		   <div class="row">
+		  <div class="col-lg-2 col-md-3"><i class="fa fa-envelope"></i></div>
+		  <div class="col-lg-9 col-md-9"><span class="form-info"><a href="mailto:someone@example.com"> industree@gmail.com </a></span><br></div>
+		  </div>
+        <div class="row">
+		  <div class="col-lg-2 col-md-3"><i class="fa fa-map-marker"></i></div>
+		  <div class="col-lg-9 col-md-9"><span class="form-info address">Master Niwas Compound,<br>
+        Besides Shiv Shankar hotel,<br>  Pratap Nagar Road,<br>
+        Vadodara, Gujarat 390004 </span> <br></div>
+		  </div>
+		  
        
 		<div class="map"></div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.8125438648726!2d73.2062639147787!3d22.28508968533144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5937bed0d4f%3A0x8f23316fc3d3d72f!2sKanan%20Industrial%20Sales%20Corporation!5e0!3m2!1sen!2sin!4v1611940173184!5m2!1sen!2sin" width="450" height="350" frameborder="0" style="border:0;"  aria-hidden="false" tabindex="0" ></iframe>
@@ -72,7 +81,16 @@
 <div class="clearfix "></div>
 
 <!-- Banner -->
-
+<section class="contact-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-9">
+        <p>Put IndusTree to work for you – Call us on +91 99788 32261 or request a quote now!</p>
+      </div>
+      <div class="col-lg-3 col-md-3"> <a href="contact.html">REQUEST A QUOTE</a> </div>
+    </div>
+  </div>
+</section>
 	
 	
 
@@ -87,7 +105,7 @@
 			  <h5>Follow us on:</h5>
             <ul>
               <li><a class="hover-target" href=""><i class="fa fa-facebook"></i></a></li>
-              <li><a class="hover-target" href="	"><i class="fa fa-instagram "></i></a></li>
+              <li><a class="hover-target" href=""><i class="fa fa-instagram "></i></a></li>
               <li><a class="hover-target" href=""><i class="fa fa-google "></i></a></li>
               <li><a class="hover-target" href=""><i class="fa fa-whatsapp "></i></a></li>
             </ul>
