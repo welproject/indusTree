@@ -9,14 +9,16 @@ html{
 body {
   background: #f7f7e8;
   font-family: 'Poppins', sans-serif;
-}
+} 
+
+/*footer{margin-bottom: 0px;}*/
 /*Header*/
 .hdear {
   width: 100%;
   position: fixed;
   top: 0;
   overflow: hidden;
-  z-index: 10;
+  z-index: 50;
   background-color: #c7cfb7;
 }
 .navbar-nav {
@@ -26,6 +28,8 @@ body {
 }
 .nav-link {
   color: #557174;
+		/*font-size:1.1vw;*/
+	font-weight: bolder;
 }
 .nav-link:hover {
   color: black;
@@ -598,11 +602,11 @@ textarea::placeholder {
 }
 /*Products Page*/
 .image {
+	display: block;
+	padding: 10px;
   margin-top: 60px;
   margin-left: 70px;
-  height: 50%;
-  width: auto;
-  /*box-shadow:10px 10px 5px rgba(0, 0, 0, 0.19);*/
+	
 }
 .description {
   margin-top: 60px;
@@ -610,10 +614,8 @@ textarea::placeholder {
 
 @media only screen and (max-width: 768px) {
   .image {
-    align-content: center !important;
-    /*float: none; !important;*/
-    margin: 60px 30px 0px 20px !important;
-    width: 300px  !important;
+    margin: 60px 30px 0px 70px !important;
+    /*width: 400px  !important;*/
   }
   .description {
     margin: 50px;
@@ -622,33 +624,13 @@ textarea::placeholder {
 @media only screen and (max-width: 600px) {
 	.image {
     align-content: center !important;
-    margin: 60px 10px 0px 15px !important;
-    width: 	220px !important;
+    margin: 60px 10px 0px 20px !important;
+ /*   width: 	220px !important;*/
 	}
   }
 
-@media only screen and (max-width: 1200px) {
-  .image {
-	 margin: 60px 30px 0px 10px !important;
-    width: 280px !important;
-	}
 
-  .description {
-    margin: 50px;
-  }
-}
 
-@media only screen and (max-width: 992px) {
-  .image {
-    margin:60px 50px 0px 50px !important;
-	  padding-left: 80px;	
-    width: 250px !important;
-     
-  }
-  .description {
-    margin: 50px;
-  }
-}
 
 
 
@@ -887,3 +869,7 @@ textarea::placeholder {
   transform: scale(1.2, 1.2);
 }
 /*end detail card*/
+.img-fit {
+	max-width: 100%;
+	max-width: 100%;
+}
