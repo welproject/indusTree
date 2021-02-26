@@ -2,7 +2,7 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap');
 html{
-	height:100%;
+height:100%;
  padding:0;
  margin:0;
 }
@@ -192,8 +192,8 @@ body {
 }
 #team .card {
   border: none;
-  background-image: url("images/card-design-2.png");
-  background-position: center;
+background-image: url("../images/card-design-2.png");
+background-position: center;
   background-repeat: no-repeat;
 }
 .image-flip:hover .backside, .image-flip.hover .backside {
@@ -576,7 +576,6 @@ textarea::placeholder {
   height: 33px;
   text-align: center;
   cursor: pointer;
-  letter-spacing: 2px; 
   margin-left: 3%;
   border: 2px solid black;
   color: black;
@@ -615,7 +614,7 @@ textarea::placeholder {
 @media only screen and (max-width: 768px) {
   .image {
     margin: 60px 30px 0px 70px !important;
-    /*width: 400px  !important;*/
+    width: 400px  !important;
   }
   .description {
     margin: 50px;
@@ -628,12 +627,6 @@ textarea::placeholder {
  /*   width: 	220px !important;*/
 	}
   }
-
-
-
-
-
-
 /*d-1*/
 .pricingdiv {
   display: flex;
@@ -828,7 +821,6 @@ textarea::placeholder {
   height: 100%;
   float: right;
   width: 45%;
-  display: inline-block;
 }
 #container img {
   width: 100%;
@@ -871,5 +863,273 @@ textarea::placeholder {
 /*end detail card*/
 .img-fit {
 	max-width: 100%;
-	max-width: 100%;
 }
+
+/*Product Page*/
+
+/*
+main {
+  color: #252a32;
+  background: #ffffff;
+}
+
+.product-container {
+  max-width: 80rem;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 100px auto;
+	 display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+  .main .product-card {
+    color: #252a32;
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+    .product-card .card-image {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-top: 70%;
+      background: #ffffff;
+}
+     .product-card .card-image  img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+   
+@media only screen and (max-width: 767px) {
+  .main .product-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+}
+
+.fancybox-image, .fancybox-spaceball {
+    background: transparent;
+    margin: 0px;
+	height: 100%;
+	width: 100%;
+    min-height: 500px;
+    min-width: 800px;
+    position: relative;
+	align-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+.overlay{
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.product-card:hover .overlay{
+  opacity: 1;
+}
+
+.caption {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.card-image:hover .caption{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.caption h3{
+  color: black;
+	background-color: lightgray;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.wg-box-fadeIn-bottom{
+  top: 80%;
+}
+*/
+
+#container {
+  margin: auto;
+}
+.grid-item {
+display: inline-block;
+    height: 259px;
+	margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 400px;
+}
+.grid-item img{
+	width:100%;
+	height:auto;
+	filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition: 0.9s;
+}
+.grid-item img:hover{
+    filter: none;
+}
+
+.isotope-pager .pager {
+  display: inline-block;
+}
+.filters {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 35px;
+	padding-top:20px;
+	margin-top: 120px;	
+	
+}
+
+.filters ul {
+	list-style: none;
+    padding: 10px 10px;
+    box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+    margin: 0 20px;
+    border-radius: 10px;
+	background-color: #bcb88a;
+}
+
+.filters li {
+	display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;	
+}
+.filters li a{
+	color: black;
+	text-decoration: none;
+}
+.filters li a:hover{
+	color:black;
+}
+
+.filters li:hover {
+	box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	border-radius: 15px;
+}
+
+.filters li.active a{	
+	color: black;
+	border: 1px solid black;
+	border-radius: 15px;
+	box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	padding: 10px 25px;
+	
+}
+
+.isotope-pager a{
+  margin: 6px 1px;
+    display: inline-block;
+    width: 50px;
+    /* height: 60px; */
+    line-height: 31px;
+    color: #b6b6b6;
+    font-weight: 600;
+    transition: 0.3s;
+    /* position: relative; */
+    /* padding-right: 26px; */
+    box-shadow: -1px 1px 11px rgba(0,0,0,.1);
+    border-radius: 25px;
+    background-color: #232323;
+    border: .5px solid #e3ca66;
+	text-decoration:none;
+}
+
+.isotope-pager a:hover{
+  color: #fff;
+  border: .5px solid #ffeeac;
+  box-shadow: -1px 1px 10px 3px rgba(0,0,0,.1);
+}
+
+.isotope-pager .active{
+  color: #e3ca66 !important;
+    box-shadow: -1px 1px 10px 5px rgba(0,0,0,.1);
+    border-radius: 25px;
+    background-color: #161616;
+    border: 1px dotted #e3ca66;
+}
+
+.isotope-pager .prev{
+  border-radius: 30px 0 0 30px;
+}
+
+.isotope-pager .next{
+  border-radius: 0 30px 30px 0;
+}
+
+.isotope-pager a::before,.isotope-pager a:after{
+  content: "";
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+.isotope-pager .num::before,.next::before{
+  border-right: 20px solid #2c3e50;
+  right: 100%;
+}
+
+.isotope-pager .num:after,.prev:after{
+  border-right: 20px solid #f1f1f1;
+  right: 0;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+/*End Product Page*/
