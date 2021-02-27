@@ -62,7 +62,7 @@ body {
   border: 2px solid #140E0E;
 }
 .logo {
-  width: 150px;
+  width: 125px;
   height: 80px;
 }
 .nav-icon-color {
@@ -601,11 +601,11 @@ textarea::placeholder {
 }
 /*Products Page*/
 .image {
-	display: block;
+	display: flex;
 	padding: 10px;
   margin-top: 60px;
-  margin-left: 70px;
-	
+	margin-right: 20%;
+	float: right;
 }
 .description {
   margin-top: 60px;
@@ -613,7 +613,7 @@ textarea::placeholder {
 
 @media only screen and (max-width: 768px) {
   .image {
-    margin: 60px 30px 0px 70px !important;
+    margin: 60px 50px 0px 0px !important;
     width: 400px  !important;
   }
   .description {
@@ -623,7 +623,7 @@ textarea::placeholder {
 @media only screen and (max-width: 600px) {
 	.image {
     align-content: center !important;
-    margin: 60px 10px 0px 20px !important;
+    margin: 60px 70px 0px 0px !important;
  /*   width: 	220px !important;*/
 	}
   }
