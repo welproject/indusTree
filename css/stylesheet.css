@@ -10,7 +10,6 @@ body {
   background: #f7f7e8;
   font-family: 'Poppins', sans-serif;
 } 
-
 /*footer{margin-bottom: 0px;}*/
 /*Header*/
 .hdear {
@@ -393,8 +392,8 @@ background-position: center;
 /*Footer*/
 .contact-area {
   border-bottom: 1px solid #353C46;
-  background: #c7cfb7;
-  color: black;
+  background: #433520;
+  color: white;
   padding: 40px 0;
 }
 .contact-content p {
@@ -413,7 +412,7 @@ background-position: center;
   width: 80%;
 }
 .contact-content h5 {
-  color: black;
+  color: white;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -435,18 +434,19 @@ background-position: center;
   list-style: none;
 }
 .contact-social ul li a {
-  border: 1px solid black;
-  color: black;
+  border: 1.5px solid whitesmoke;
+  color: whitesmoke;
   display: inline-block;
   height: 40px;
   margin: 0 10px;
   padding-top: 7px;
   transition: all 0.4s ease 0s;
   width: 40px;
+	border-radius: 100%;
 }
 .contact-social ul li a:hover {
-  border: 1.5px solid #f7f7e8;
-  color: #f7f7e8;
+  border: 1.5px solid #9dc6a7;
+  color: #9dc6a7;
 }
 .contact-social h5 {
   margin-bottom: 20px;
@@ -456,8 +456,8 @@ background-position: center;
   margin-top: 30px;
 }
 footer {
-  background: #c7cfb7;
-  color: black;
+  background: #433520;
+  color: white;
 }
 footer p {
   padding: 20px 0 0 0;
