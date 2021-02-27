@@ -9,6 +9,7 @@ height:100%;
 body {
   background: #f7f7e8;
   font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
 } 
 /*footer{margin-bottom: 0px;}*/
 /*Header*/
@@ -330,6 +331,11 @@ background-position: center;
   height: 300px;
   margin: 10px;
 }
+@media only screen and (max-width: 582px){
+	.image-block img{
+		margin-left: 0px;
+	}
+}
 /*End image gallery*/
 /*Contact Banner*/
 .contact-banner p {
@@ -547,6 +553,7 @@ input {
   color: black;
   border: none;
   outline: none;
+	border-radius: 20px;
 }
 input::placeholder {
   color: black;
@@ -559,31 +566,32 @@ textarea {
   color: black;
   border: none;
   outline: none;
+	border-radius: 30px;
 }
 textarea::placeholder {
   color: black;
+	padding: 3px;
 }
 .submit {
   width: 40%;
-  background: none;
-  padding: 4px;
-  outline: none;
-  /* border: 1px solid #fff;
-      color: #fff; */
-  font-size: 13px;
+  background: rgba(81, 50, 36, 0.72);
+  padding: 5px;
+  font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
   height: 33px;
   text-align: center;
   cursor: pointer;
   margin-left: 3%;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid white;
+  color: white;
+border-radius: 20px;
 }
 .submit:hover {
-  border: 1px solid black;
-  color: black;
+  border: 1px solid white;
+  color: white;
   cursor: pointer;
+	background: rgba(81, 50, 36, 0.90);
 }
 /* media queries */
 @media (max-width: 767px) {
@@ -1002,13 +1010,19 @@ display: inline-block;
 	height:auto;
 	filter: url(filters.svg#grayscale);
     filter: gray;
-    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(0.8);
     transition: 0.9s;
 }
 .grid-item img:hover{
     filter: none;
 }
-
+@media only screen and (max-width:767px){
+	.grid-item img{
+		filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(0);
+	}
+}
 .isotope-pager .pager {
   display: inline-block;
 }
@@ -1027,7 +1041,7 @@ display: inline-block;
     box-shadow: -1px 1px 11px rgba(0,0,0,.4);
     margin: 0 20px;
     border-radius: 10px;
-	background-color: #bcb88a;
+	background-color: #AABC85;
 }
 
 .filters li {
