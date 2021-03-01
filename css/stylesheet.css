@@ -709,8 +709,13 @@ border-radius: 20px;
 }
 
 .product-features{
-	margin: 35px 5px;
-	 
+	margin: 35px 15px;
+	font-size:.93em;
+	 font-size-adjust: auto;
+}
+
+.product-features h2{
+	color: #4D6669;
 }
  
 
