@@ -148,6 +148,16 @@ body {
   .slideshowContainer {
     margin: 150px 50px 50px;
   }
+	.backside .card p{
+		 display: none;
+  }
+	
+	.backside .card span{
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+  }
+	
 }
 /* End Slider*/
 .main-container {
@@ -266,6 +276,21 @@ background-position: center;
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
+	 .backside .card p{
+    font-size: 1px;
+	  visibility: hidden;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  padding: 0;
+  }
+	.card-title{
+		margin-top: 5px;
+	}
+	.list-items{
+		margin-bottom: 0;
+	}
+	}
+@media only screen and (min-width: 767px) {
   /*  .backside .card, .frontside .card {
     min-height: 430px;
   }*
@@ -274,15 +299,31 @@ background-position: center;
 		text-decoration: none;
 		line-height: 1.2;
 	}*/
-  .backside .card p {
-    font-size: 14px;
+  .backside .card p{
+    font-size: 1px;
+	  visibility: hidden;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  padding: 0;
   }
+	
+	.backside .card span{
+		visibility: hidden;
+		margin: 0;
+		padding: 0;}
+	.card-title{
+		margin-bottom: 40px;	
+	}
 }
+ .backside .card p{
+    font-size: 14px;
+	  visibility: hidden;
+  }
 .backside .card-body {
   background-image: url("images/card-back.png")
 }
 .backside .card a {
-  font-size: 16px;
+  font-size: 15px;
   color: white !important;
 }
 .frontside .card .card-title /*.backside .card .card-title*/ {
@@ -309,7 +350,7 @@ background-position: center;
 }
 .list-items a {
   text-decoration: none;
-  font-size: 10px;
+  font-size: 0.75rem;
 }
 .list-items {
   list-style: none;
