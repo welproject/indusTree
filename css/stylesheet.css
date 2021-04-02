@@ -146,18 +146,16 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .slideshowContainer {
-    margin: 150px 50px 50px;
+    margin: 150px 0px 50px ;
   }
 	.backside .card p{
 		 display: none;
   }
-	
 	.backside .card span{
 		visibility: hidden;
 		margin: 0;
 		padding: 0;
   }
-	
 }
 /* End Slider*/
 .main-container {
@@ -351,9 +349,14 @@ background-position: center;
 .list-items a {
   text-decoration: none;
   font-size: 0.75rem;
+	align-content: center;
 }
 .list-items {
   list-style: none;
+	align-content: center;
+}
+.list-items {
+	align-content: center;
 }
 /*End Card*/
 /*image gallery*/
