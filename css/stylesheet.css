@@ -353,11 +353,12 @@ background-position: center;
 }
 .list-items {
   list-style: none;
-	align-content: center;
+	align-content: left;
+	margin-right: 30px;
 }
-.list-items {
-	align-content: center;
-}
+/*.list-item {
+	align-content: right;
+}*/
 /*End Card*/
 /*image gallery*/
 .image-block {
