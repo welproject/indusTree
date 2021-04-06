@@ -1,6 +1,7 @@
 /* CSS Document */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap');
+@font-face{src: url("Futura Book Italic font.ttf"); font-family:"Futura-BI";}
 html{
 height:100%;
  padding:0;
@@ -325,8 +326,11 @@ background-position: center;
   color: white !important;
 }
 .frontside .card .card-title /*.backside .card .card-title*/ {
-  font-family: 'Sacramento';
+  font-family: 'Futura-BI';
   color: whitesmoke !important;
+	font-weight:bolder;
+	font-size:255%;
+	
 }
 /*.frontside .card .card-body img {
   width: 120px;
