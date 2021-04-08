@@ -59,17 +59,17 @@
 		</div>
       <!-- second grid -->
       <div>
-        <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="text" placeholder="Last Name">
+        <form method="post" action="mail_process.php"> <!--Post method to post data-->
+          <input type="text" id="fname" name="fname" placeholder="Your Name" required>
+          <input type="text" id="lname" name="lname" placeholder="Last Name">
           <br>
-          <input type="Email" placeholder="Email" required>
+          <input type="Email" id="email" name="email" placeholder="Email" required>
           <br>
-          <input type="phone" placeholder="Phone" required>
+          <input type="phone" id="phone" name="phone" placeholder="Phone" required>
           <br>
-          <input type="text" placeholder="Subject of this message">
+          <input type="text" name="subject" id="subject" placeholder="Subject of this message">
           <br>
-          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+          <textarea name="msg" id="msg" placeholder="Message" rows="5" required></textarea>
           <br>
           <button class="submit" >Send Message</button>
         </form>
