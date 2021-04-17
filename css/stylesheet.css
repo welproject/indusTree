@@ -63,7 +63,7 @@ body {
   border: 2px solid #140E0E;
 }
 .logo {
-  width: 30%;
+  width: 115px;
   height: 80px;
 }
 .nav-icon-color {
@@ -522,6 +522,40 @@ footer img {
   width: 44px;
 }
 /*End Footer*/
+/*About Us Page*/
+.about-us-top-banner{
+	margin-top: 150px;
+	margin-bottom: 30px;
+	
+
+}
+.about-us-banner{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	
+}
+.about-us-banner-content {
+  text-align: center;
+}
+
+.about-us-banner-content p {
+  line-height: 1.8;
+}
+.about-us-banner-content h2 {
+  color: #557174;
+  font-size: 2.4em;
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
+.about-us-banner-content h3 {
+  color: #557174;
+  font-size: 1.8em;
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
+/*End About*/
+
+
 /*Contact Page*/
 #contact-section .container {
   width: 90%;
